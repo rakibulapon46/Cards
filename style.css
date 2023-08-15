@@ -1,0 +1,48 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 255, 255, 0.712);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.posts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.post{
+    background-color: rgba(0, 255, 255, 0.758);
+    width: 23%;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.5s;
+}
+
+.post:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+@media (max-width: 991px) {
+    .post{
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .post{
+        width: 100%;
+    }
+}
